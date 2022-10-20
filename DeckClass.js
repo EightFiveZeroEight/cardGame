@@ -6,7 +6,7 @@ const POSSIBLE_SUITS = [`Sages`, `Heroes`, `Peasants`, `Weavers`, `Nobles`, `Rea
 
 POSSIBLE_SUITS.sort()
 
-const POSSIBLE_RANKS = [`R0`, `R1`, `R2`, `R3`, `R4`, `R5`, `R6`, `R7`]
+const POSSIBLE_RANKS = [`Lv0`, `Lv1`, `Lv2`, `Lv3`, `Lv4`, `Lv5`, `Lv6`, `Lv7`]
 
 ;
 //#endregion ## Possible Ranks & Possible Suits
@@ -74,6 +74,24 @@ class Deck{
     }
 
 
+    deal(numHands, cardsPerHand){
+        let handsReturned = [];
+        
+        for (let hand = 0; hand < numHands; hand++) {
+            const element = numHands;
+            let thisHand = [];
+            for (let cardBeingDealt = 0; cardBeingDealt < cardsPerHand; cardBeingDealt++) {
+                const element = cardsPerHand;
+                let thisCard = this.deckCards.pop();
+                thisHand.push(thisCard);
+            }
+            handsReturned.push(thisHand);
+        }
+        
+        console.log(handsReturned);
+        return handsReturned;
+    }
+
 }
 
 
@@ -88,5 +106,5 @@ THIS_DECK.generateCards(POSSIBLE_RANKS, POSSIBLE_SUITS);
 // THIS_DECK.shuffle();
 // console.log(THIS_DECK.draw());
 //#endregion ##Initialize Deck
-
+// THIS_DECK.deal(2, 7)
 
