@@ -23,6 +23,22 @@ deal(numHands, cardsPerHand) will deal cardsPerHand cards to numHands hands.
 
 Reminder: Check in with an instructor after completing Phase 1. Make sure that you have tested everything thoroughly using the browser console and debugging tools.
 
+// Array of possible Ranks
+// Array of possible suits
+// Array of cards made by generateCards()
+
+// generateCards() populates deck with an initial array of cards
+
+// shuffleCardS() will shuffle the cards in the deck; search online for a shuffle function
+
+// draw() will remove and return a card from the deck
+
+// deal(numHands, cardsPerHand) will deal cardsPerHand cards to numHands hands.
+
+
+
+
+
 ######################
 
 You will be implementing the logic for a card game of your choice. Some examples of games are:
