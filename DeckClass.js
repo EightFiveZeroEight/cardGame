@@ -65,7 +65,10 @@ class Deck{
 
     }
 
-    
+    shuffle() {
+        let shuffled = this.deckCards.sort(() => Math.random() - 0.5);
+    }
+
 }
 
 
@@ -77,6 +80,8 @@ class Deck{
 const THIS_DECK = new Deck;
 THIS_DECK.generateCards(POSSIBLE_RANKS, POSSIBLE_SUITS);
 console.log(THIS_DECK.deckCards);
+THIS_DECK.shuffle();
+
 //#endregion ##Initialize Deck
 
 
