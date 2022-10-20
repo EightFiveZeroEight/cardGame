@@ -9,12 +9,21 @@ class Hand{
     }
 
     playCard(card){
-        switch(card){
-            case 0:
-                // Remove Card From Hand
-                const CARD_SUIT = this.card.suit;
-                const CARD_RANK = this.card.rank;
+        console.log(`playCard called\n
+        `);
+        if (this.arrayOfCards.includes(card)){
+            // Checks to see if this array of cards has a card
+            console.log(`this.arrayOfCards includes card evaluates true\n
+            `);
+            this.arrayOfCards.splice(this.arrayOfCards.indexOf(card));
+            // indexOf grabs the index the card is at; splice removes that index.
+
+            console.log(this.arrayOfCards);
+            
+        } else {
+            return null;
         }
     }
 }
+
 
