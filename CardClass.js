@@ -21,7 +21,6 @@ class SixOfSages extends Card{
         super(6, "Sages");
     }
 }
-const CARD_SIX_OF_SAGES = new SixOfSages;
 
 ;
 //#endregion ## Card Subclasses

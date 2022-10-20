@@ -1,10 +1,11 @@
 class Hand{
-    constructor(arrayOfCards){
-        this.arrayOfCards = arrayOfCards;
+    constructor(){
+        this.arrayOfCards = [];
     }
 
     addCard(card){
-        this.arrayOfCards.push(this.card);
+        this.arrayOfCards.push(card);
+        // console.log(`Print this hand: `+this.arrayOfCards);
     }
 
     playCard(card){
@@ -16,4 +17,4 @@ class Hand{
         }
     }
 }
-console.log("🚀 ~ file: HandClass.js ~ line 20 ~ CARD_SIX_OF_SAGES", CARD_SIX_OF_SAGES)
+
